@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'intro.dart';
 import 'login.dart';
@@ -26,8 +25,7 @@ class MainApp extends StatelessWidget {
             children: [
               Intro(),
               Login(),
-               CreateAccount(),
-
+              CreateAccount(),
             ],
           ),
         ),

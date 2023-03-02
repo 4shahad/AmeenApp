@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Intro extends StatelessWidget {
   const Intro({
     super.key,
@@ -8,8 +9,8 @@ class Intro extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text('Hello World!'),
-        Text('Welcome back'),
+        Text(' مرحبا بك'),
+        Text('اهلا بعودتك'),
       ],
     );
   }
