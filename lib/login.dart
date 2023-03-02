@@ -15,7 +15,7 @@ class Login extends StatelessWidget {
           margin: EdgeInsets.all(10),
           color: Colors.white,
           child: TextField(
-            decoration: InputDecoration(hintText: "Username"),
+            decoration: InputDecoration(hintText: "ID NUMBER"),
           ),
         ),
         Container(
@@ -24,7 +24,7 @@ class Login extends StatelessWidget {
           margin: EdgeInsets.all(10),
           color: Colors.white,
           child: TextField(
-            decoration: InputDecoration(hintText: 'Password'),
+            decoration: InputDecoration(hintText: 'VALIDATION NUMBER'),
           ),
         ),
         Text('Reset password'),
