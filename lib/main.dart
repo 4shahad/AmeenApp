@@ -25,8 +25,8 @@ class MainApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Intro(),
-              CreateAccount(),
               Login(),
+               CreateAccount(),
 
             ],
           ),
