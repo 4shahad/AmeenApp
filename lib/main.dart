@@ -1,5 +1,6 @@
+
 import 'package:flutter/material.dart';
-import 'Intro.dart';
+import 'intro.dart';
 import 'login.dart';
 import 'createAccount.dart';
 
@@ -25,6 +26,8 @@ class MainApp extends StatelessWidget {
             children: [
               Intro(),
               CreateAccount(),
+              Login(),
+
             ],
           ),
         ),
