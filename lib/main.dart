@@ -1,9 +1,8 @@
 
-import 'MyWidget.dart';
+
 import 'package:flutter/material.dart';
 import 'intro.dart';
-import 'login.dart';
-import 'createAccount.dart';
+
 
 void main() {
   runApp(const MainApp());
