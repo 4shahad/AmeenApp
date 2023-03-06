@@ -15,14 +15,20 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset('asset/images/logo.png'),
-              Intro(),
-            ],
-          ),
+        
+        body: Column(
+          children: [DecoratedBox(decoration: BoxDecoration(image: DecorationImage(
+            image: AssetImage("asset/images/background.jpg"), fit: BoxFit.cover,),)),
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.asset('asset/images/logo.png'),
+                  Intro(),
+                ],
+              ),
+            ),
+          ],
         ),
         backgroundColor: Color.fromARGB(255, 255, 255, 255),
       ),
