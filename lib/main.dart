@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'intro.dart';
-import 'SecondRoute.dart';
+import 'LoginPage.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -26,7 +26,7 @@ class FirstRoute extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const SecondRoute()),
+                  MaterialPageRoute(builder: (context) => const Login()),
                 );
               },
             ),
