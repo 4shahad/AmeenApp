@@ -1,7 +1,7 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'intro.dart';
-import 'SecondRoute.dart';
+import 'LoginPage.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -55,6 +55,7 @@ class FirstRoute extends StatelessWidget {
               ),Spacer(),
             ],
           ),
+
         ),
       ),
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
