@@ -2,8 +2,8 @@ import 'package:ameen_app/OTP.dart';
 import 'package:flutter/material.dart';
 import 'OTP.dart';
 
-class Login extends StatelessWidget {
-  const Login({super.key});
+class IdPage extends StatelessWidget {
+  const IdPage({super.key});
 
   @override
   Widget build(BuildContext context) {
