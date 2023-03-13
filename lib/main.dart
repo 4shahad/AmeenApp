@@ -76,7 +76,7 @@ ElevatedButton(
                 color: Color.fromARGB(255, 0, 0, 0), fontSize: 18, fontStyle: FontStyle.normal)
                , fixedSize:Size(375, 50),
                shape:
-                  RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+                  RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
           ),
            onPressed: () {
               Navigator.push(
