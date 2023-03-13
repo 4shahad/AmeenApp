@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Otp extends StatefulWidget {
-  const Otp({Key? key}) : super(key: key);
+class OTP extends StatefulWidget {
+  const OTP({Key? key}) : super(key: key);
 
   @override
   // ignore: library_private_types_in_public_api
-  _OtpState createState() => _OtpState();
+  _OTPState createState() => _OTPState();
 }
 
-class _OtpState extends State<Otp> {
+class _OTPState extends State<OTP> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

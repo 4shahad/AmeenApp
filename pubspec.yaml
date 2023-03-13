@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   fluentui_icons: ^1.0.0 
+  drop_shadow_image: ^0.9.0
 
 dev_dependencies:
   flutter_test:
