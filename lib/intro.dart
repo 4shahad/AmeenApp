@@ -8,7 +8,9 @@ class Intro extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [Text( "أختر طريقة تسجيل الدخول ",style: TextStyle(color: Color.fromARGB(255, 57, 57, 57),fontSize: 18 ,fontStyle: FontStyle.italic),)],
+      children: [Text( "جــهـاز أمــيــن",style: TextStyle(color: Color.fromRGBO(98, 142, 128, 1),fontSize: 24 ,fontWeight: FontWeight.bold),),
+      Text(" :جهاز الخدمة الذاتية أمين الذي يقدم لك ",style: TextStyle(color:Color.fromARGB(255, 74, 73, 73))),
+      Text("خدمة تقديم بلاغات الفقدان واللقطه وبلاغات أخرى ",style: TextStyle(color:Color.fromARGB(255, 74, 73, 73) ))],
     );
   }
 }
