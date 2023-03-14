@@ -1,4 +1,5 @@
 
+import 'package:ameen_app/splashScreen.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'intro.dart';
@@ -8,7 +9,7 @@ import 'IdPage.dart';
 void main() {
   runApp(const MaterialApp(
     title: 'Navigation Basics',
-    home: FirstRoute(),
+    home: splashscreen(),
   ));
 }
 
@@ -32,9 +33,7 @@ class FirstRoute extends StatelessWidget {
               Image.asset('asset/images/logo.png'),
               Spacer(),
               Intro(),
-
               Column(
-                
                 children: [
                   Padding(padding: new EdgeInsets.all(10.0)),
                    Column(
