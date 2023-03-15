@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'pageOfServices.dart';
 
 class OTP extends StatefulWidget {
   const OTP({Key? key}) : super(key: key);
@@ -37,7 +38,7 @@ class OTPState extends State<OTP> {
                   width: 100,
                   height: 140,
                   decoration: BoxDecoration(
-                    color: Color.fromARGB(57, 165, 217, 173),
+                    color: Color.fromARGB(5, 161, 169, 166),
                     shape: BoxShape.circle,
                   ),
                   child: Image.asset(
@@ -93,12 +94,18 @@ class OTPState extends State<OTP> {
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const PageOfServices()),
+                          );
+                        },
                         style: ButtonStyle(
                           foregroundColor:
                               MaterialStateProperty.all<Color>(Colors.white),
                           backgroundColor: MaterialStateProperty.all<Color>(
-                              Color.fromARGB(255, 93, 154, 143)),
+                              Color.fromARGB(255, 24, 86, 67)),
                           shape:
                               MaterialStateProperty.all<RoundedRectangleBorder>(
                             RoundedRectangleBorder(
