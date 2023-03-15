@@ -5,10 +5,10 @@ class OTP extends StatefulWidget {
 
   @override
   // ignore: library_private_types_in_public_api
-  _OTPState createState() => _OTPState();
+  OTPState createState() => OTPState();
 }
 
-class _OTPState extends State<OTP> {
+class OTPState extends State<OTP> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -138,7 +138,7 @@ class _OTPState extends State<OTP> {
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: Color.fromARGB(255, 22, 109, 74),
+                  color: Color.fromARGB(255, 24, 86, 67),
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -177,7 +177,7 @@ class _OTPState extends State<OTP> {
                 borderRadius: BorderRadius.circular(12)),
             focusedBorder: OutlineInputBorder(
                 borderSide: BorderSide(
-                    width: 2, color: Color.fromARGB(255, 48, 132, 98)),
+                    width: 2, color: Color.fromARGB(255, 24, 86, 67)),
                 borderRadius: BorderRadius.circular(12)),
           ),
         ),
