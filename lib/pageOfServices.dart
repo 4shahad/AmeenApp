@@ -15,7 +15,7 @@ class PageOfServices extends StatelessWidget {
           child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("asset/images/backgroundOfServices.jpg"),
+              image: AssetImage("asset/images/back.jpeg"),
               fit: BoxFit.cover,
             ),
           ),
