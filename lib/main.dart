@@ -1,6 +1,7 @@
+import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'IdPageTestField.dart';
 import 'intro.dart';
+import 'IdPageTestField.dart';
 
 void main() {
   runApp(const MaterialApp(
@@ -11,7 +12,6 @@ void main() {
 
 class FirstRoute extends StatelessWidget {
   const FirstRoute({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,32 +29,93 @@ class FirstRoute extends StatelessWidget {
               Image.asset('asset/images/logo.png'),
               Spacer(),
               Intro(),
-              ElevatedButton.icon(
-                icon: Icon(FluentSystemIcons.ic_fluent_person_board_filled,
-                    color: Color.fromRGBO(255, 255, 255, 1)),
-                label: const Text(
-                  'طـلـب خـدمـة ',
-                  style: TextStyle(
-                    color: Color.fromARGB(255, 255, 255, 255),
+              Column(
+                children: [
+                  Padding(padding: new EdgeInsets.all(10.0)),
+                  Column(
+                    children: [
+                      ElevatedButton(
+                        child: Text('بدء الخدمة'),
+                        style: ElevatedButton.styleFrom(
+                          elevation: 12.0,
+                          padding: EdgeInsets.all(10),
+                          primary: Color.fromARGB(255, 24, 86, 67),
+                          onPrimary: Color.fromARGB(255, 255, 255, 255),
+                          textStyle: const TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                              fontSize: 18,
+                              fontStyle: FontStyle.normal),
+                          fixedSize: Size(375, 50),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8)),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const IdPage()),
+                          );
+                        },
+                      ),
+                    ],
                   ),
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const IdPage()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.all(18.0),
-                    fixedSize: Size(400, 60),
-                    textStyle: TextStyle(fontSize: 16, color: Colors.white),
-                    primary: Color.fromRGBO(50, 119, 73, 1),
-                    onPrimary: Colors.black,
-                    elevation: 7,
-                    shadowColor: Color.fromARGB(255, 99, 98, 98),
-                    side: BorderSide(
-                        color: Color.fromARGB(221, 180, 180, 180), width: 1),
-                    shape: StadiumBorder()),
+                  Column(
+                    children: [
+                      Padding(padding: new EdgeInsets.all(10.0)),
+                      ElevatedButton(
+                        child: Text('الإرشادات '),
+                        style: ElevatedButton.styleFrom(
+                          elevation: 12.0,
+                          padding: EdgeInsets.all(10),
+                          primary: Color.fromARGB(255, 24, 86, 67),
+                          onPrimary: Color.fromARGB(255, 255, 255, 255),
+                          textStyle: const TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                              fontSize: 18,
+                              fontStyle: FontStyle.normal),
+                          fixedSize: Size(375, 50),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8)),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const IdPage()),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Padding(padding: new EdgeInsets.all(10.0)),
+                      ElevatedButton(
+                        child: Text('أصدقاء الأمن  '),
+                        style: ElevatedButton.styleFrom(
+                          elevation: 12.0,
+                          padding: EdgeInsets.all(10),
+                          primary: Color.fromARGB(255, 24, 86, 67),
+                          onPrimary: Color.fromARGB(255, 255, 255, 255),
+                          textStyle: const TextStyle(
+                              color: Color.fromARGB(255, 0, 0, 0),
+                              fontSize: 18,
+                              fontStyle: FontStyle.normal),
+                          fixedSize: Size(375, 50),
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8)),
+                        ),
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const IdPage()),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ],
               ),
               Spacer(),
             ],
