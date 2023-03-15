@@ -7,7 +7,7 @@ import 'IdPageTestField.dart';
 
 void main() {
   runApp(const MaterialApp(
-    title: 'Navigation Basics',
+    title: 'جهاز أمين',
     home: splashscreen(),
   ));
 }
