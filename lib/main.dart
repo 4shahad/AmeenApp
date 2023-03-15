@@ -1,6 +1,5 @@
 
 import 'package:ameen_app/splashScreen.dart';
-import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 import 'intro.dart';
 import 'IdPageTestField.dart';
