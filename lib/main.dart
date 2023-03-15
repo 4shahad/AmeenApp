@@ -1,9 +1,7 @@
-
 import 'package:ameen_app/splashScreen.dart';
 import 'package:flutter/material.dart';
 import 'intro.dart';
 import 'IdPageTestField.dart';
-
 
 void main() {
   runApp(const MaterialApp(

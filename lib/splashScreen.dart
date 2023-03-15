@@ -1,7 +1,6 @@
 import 'package:ameen_app/main.dart';
 import 'package:flutter/material.dart';
 
-
 class splashscreen extends StatefulWidget {
   const splashscreen({super.key});
 
@@ -16,16 +15,17 @@ int numberOfLopps = 7;
   @override
   void initState() {
 
+
     hidenOrShowImage();
     Future.delayed(Duration(seconds:10),(){
       Navigator.pushReplacement(context, MaterialPageRoute(builder:(context){
         return FirstRoute();
       }));
-
     });
-    
+
     super.initState();
   }
+
 
 hidenOrShowImage(){
   setState(() {
@@ -44,7 +44,6 @@ hidenOrShowImage(){
   numberOfLopps--;
   }
 }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,6 +61,7 @@ hidenOrShowImage(){
             image: AssetImage(("asset/images/logo.png"),)),
             )
             ),
+
       ),
     );
   }
