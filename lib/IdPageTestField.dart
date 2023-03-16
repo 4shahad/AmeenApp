@@ -42,6 +42,7 @@ class IdPage extends StatelessWidget {
                 ),
               ),
               TextFormField(
+              textAlign: TextAlign.left,
                 decoration: const InputDecoration(
                   icon: Icon(Icons.person),
                   hintText: 'الرجاء إدخال رقم الهوية',
@@ -49,7 +50,7 @@ class IdPage extends StatelessWidget {
                 ),
               ),
               ElevatedButton(
-                child: Text('إدحال'),
+                child: Text('إدخال'),
                 style: ElevatedButton.styleFrom(
                   elevation: 12.0,
                   padding: EdgeInsets.all(10),
