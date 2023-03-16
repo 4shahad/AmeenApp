@@ -42,6 +42,7 @@ class IdPage extends StatelessWidget {
                 ),
               ),
               TextFormField(
+                keyboardType: TextInputType.number,
               textAlign: TextAlign.left,
                 decoration: const InputDecoration(
                   icon: Icon(Icons.person),

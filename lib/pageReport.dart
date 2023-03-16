@@ -51,7 +51,8 @@ class _reportAskState extends State<reportAsk> {
                 Container(
                   padding:  EdgeInsets.fromLTRB(10, 10, 10, 0),
                   child: TextField(
-                    obscureText: true,
+                    keyboardType: TextInputType.number,
+                    obscureText: false,
                     controller: numberController,
                     decoration:  InputDecoration(
                       border: OutlineInputBorder(),
@@ -62,7 +63,7 @@ class _reportAskState extends State<reportAsk> {
                   Container(
                   padding:  EdgeInsets.fromLTRB(10, 10, 10, 0),
                   child: TextField(
-                    obscureText: true,
+                    obscureText: false,
                     controller: nameController,
                     decoration:  InputDecoration(
                       border: OutlineInputBorder(),
@@ -97,6 +98,33 @@ class _reportAskState extends State<reportAsk> {
                         },
                       )
                   ),
+                  
+                ),
+               Padding(        padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                      height: 50,
+                      padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                      child: ElevatedButton(
+                        child: const Text('الرجوع'),
+                        style: ElevatedButton.styleFrom(
+                            elevation: 12.0,
+                            padding: EdgeInsets.all(10),
+                            primary: Color.fromARGB(255, 24, 86, 67),
+                            onPrimary: Color.fromARGB(255, 255, 255, 255),
+                            textStyle: const TextStyle(
+                                color: Color.fromARGB(255, 0, 0, 0),
+                                fontSize: 18,
+                                fontStyle: FontStyle.normal),
+                            fixedSize: Size(375, 50),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8)),
+                          ),
+                        onPressed: () {
+                       Navigator.pop(context);
+                        },
+                      )
+                  ),
+                  
                 ),
               ],
             )),
