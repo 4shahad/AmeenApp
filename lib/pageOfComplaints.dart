@@ -1,3 +1,4 @@
+import 'pageReport.dart';
 import 'package:flutter/material.dart';
 import 'package:ameen_app/responsive.dart';
 
@@ -11,7 +12,7 @@ class Complaints extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage("asset/images/backgroundOfcomplaints.jpg"),
+              image: AssetImage("asset/images/back.jpeg"),
               fit: BoxFit.cover,
             ),
           ),
@@ -40,7 +41,7 @@ class Complaints extends StatelessWidget {
                   ),
                   Expanded(child: SizedBox()),
                   Padding(
-                    padding: const EdgeInsets.all(10.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Align(
                       alignment: Alignment.bottomRight,
                       child: ElevatedButton(
@@ -49,8 +50,8 @@ class Complaints extends StatelessWidget {
                           Navigator.pop(context);
                         },
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.transparent,
-                            foregroundColor: Color.fromARGB(255, 24, 86, 67),
+                            backgroundColor: Color.fromRGBO(98, 142, 128, 1),
+                            foregroundColor: Color.fromARGB(255, 255, 255, 255),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8)),
                             textStyle: TextStyle(
@@ -105,7 +106,12 @@ class tabletSizeComplaints extends StatelessWidget {
               width: 200,
               height: 50,
               title: "تسجيل بيانات لقطة",
-              onPressed: () {},
+              onPressed: () {
+                 Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const reportAsk()),
+                  );
+              },
             ),
           ],
         ),
@@ -180,7 +186,12 @@ class mobileSizeComplaints extends StatelessWidget {
               width: 150,
               height: 50,
               title: "تسجيل بيانات لقطة",
-              onPressed: () {},
+              onPressed: () {
+               Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const reportAsk()),
+                  );
+              },
             ),
           ],
         ),
@@ -249,7 +260,7 @@ class MyButton extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8)),
               textStyle: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 14,
+                fontSize: 12,
               )),
         ),
       ),

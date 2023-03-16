@@ -120,7 +120,7 @@ class tabletSizeServices extends StatelessWidget {
               onPressed: () {
                 Navigator.push(
                context,
-               MaterialPageRoute(builder: (context) => Complaints()),
+               MaterialPageRoute(builder: (context) => const Complaints()),
                 );
               },
             ),
@@ -300,7 +300,7 @@ class MyButton extends StatelessWidget {
                   RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                   textStyle: TextStyle(
                   fontWeight: FontWeight.bold,
-                   fontSize: 14,
+                   fontSize: 12,
               )),
         ),
       ),
